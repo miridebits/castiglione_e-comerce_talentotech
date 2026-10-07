@@ -1,0 +1,177 @@
+@font-face {
+    font-family: EBGaramond;
+    src: url(/fuentes/EBGaramond-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+  font-family: Verdana,Geneva,sans-serif; 
+}
+
+a{text-decoration: none;}
+
+div{
+  overflow:hidden;
+}
+
+button{
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  line-height:50%;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  cursor: pointer;
+  
+}
+
+nav{
+  display: flex;
+  background-color:black;
+  border-bottom: 3px solid black;
+  height: 3vh;
+}
+
+nav button{
+  height:100%;
+  width:15vh;
+  border-bottom:none;
+  border-top:none;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid black;
+  height: 10vh;
+  padding-left: 2vh;
+}
+
+header img{height: 7vh;}
+
+header h1{font-size: 7vh;}
+
+@media (max-width: 640px) 
+{
+  header img
+   {
+      display: none;
+   }
+}
+
+.tienda {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color: #E8E8E8;
+}
+
+.bienvenidos{
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+}
+
+.bienvenidos h2 {
+  text-align: center;
+  font-size: 3vh;
+}
+
+.bienvenidos p{
+  text-align: center;
+  font-size: 2vh;
+}
+
+.tienda-productos{
+  padding-bottom:30vh;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vh, 0.9fr));
+  gap: 30px;
+}
+
+.item{
+  position: relative;
+  background-color:black;
+  height: 30vh;
+  border: 3px solid black;
+}
+
+.item__gradiente{
+  position: relative;
+  height:100%;
+  width:100%;
+}
+
+.item img{
+ width:100%;
+ height:100%;
+ object-fit: cover;
+ object-position: center center;
+ }
+
+.item__gradiente::after{
+  content: "";
+  position: absolute;
+  inset:0;
+  background: linear-gradient(to bottom,transparent,transparent,black);
+}
+
+.item__botones{
+  position: absolute;
+  top: 70%;
+  height:30%;
+  width:100%;
+  padding:15px;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:10px;
+  grid-auto-rows: 40%;
+}
+
+.boton__nombre{
+  font-family:EBGaramond;
+  font-weight: bold;
+  font-size:20px;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.boton__precio{
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+.boton__tienda{
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.boton__tienda img{
+ padding:0;
+ margin:0;
+ width:100%;
+ height:100%;
+ object-fit: scale-down;
+}
+
+.item__botones button{
+  border:none
+}
+
+footer {
+  background-color:white;
+  border-top: 3px solid black;
+  width:100%;
+  padding-left:2vh;
+}
+.contacto{
+  padding-top:2vh;
+  padding-bottom:5vh;
+
+}
