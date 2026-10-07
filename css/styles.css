@@ -75,11 +75,8 @@ header h1{font-size: 7vh;}
   margin-right: 5vw;
   margin-top: 5vh;
 }
-.tienda{
+.bienvenidos{
   margin-bottom: 7vh;
-}
-.carrito{
-  margin-bottom: 40vh;
 }
 
 .contenido_basico h2 {
@@ -87,9 +84,17 @@ header h1{font-size: 7vh;}
   font-size: 3vh;
 }
 
-.bienvenidos p{
+.contenido_basico p{
   text-align: center;
   font-size: 2vh;
+}
+
+.bienvenidos{
+  margin-bottom: 7vh;
+}
+
+.carrito{
+  margin-bottom: 40vh;
 }
 
 .tienda-productos{
