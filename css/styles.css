@@ -52,7 +52,9 @@ header {
   padding-left: 2vh;
 }
 
-header *{height: 7vh;font-size: 7vh;}
+header a img{height: 7vh;}
+
+header a h1{font-size: 7vh;}
 
 @media (max-width: 640px) 
 {
