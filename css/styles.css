@@ -54,7 +54,10 @@ header {
 
 header a img{height: 7vh;}
 
-header a h1{font-size: 7vh;}
+header a h1{
+  font-size: 7vh;
+  color:black;
+}
 
 @media (max-width: 640px) 
 {
