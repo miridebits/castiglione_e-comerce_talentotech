@@ -77,6 +77,8 @@ header a h1{
 .contenido_basico{
   margin-right: 5vw;
   margin-top: 5vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
 }
 
 .contenido_basico h2 {
